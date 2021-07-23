@@ -1,5 +1,5 @@
 /*
- * Program to swap two numbers without using third variable
+ * Program to print pyramid of # pattern of desired height
  *
  * Compilation: gcc -o pyramid pyramid.c
  * Execution: ./pyramid
