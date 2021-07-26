@@ -35,6 +35,7 @@ void check_palindrome(char* s) {
     }    
 }
 
+void remove
 
 int main() {
 
