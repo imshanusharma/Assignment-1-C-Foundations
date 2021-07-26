@@ -11,7 +11,14 @@
 #include <string.h>
 #include <ctype.h>
 
-
+/* Function to reverse the string for checking if it is palindrome or not
+ * 
+ * Paramaters
+ * s : A string passed by reference
+ *
+ * Return 
+ * Reverse of given String
+*/
 
 void check_palindrome(char* s) {
 
