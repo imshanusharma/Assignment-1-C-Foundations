@@ -1,6 +1,6 @@
 /* Program to find index of character in string A that matches character in string B
  *
- * Compilation: gcc -o found character_found.c
+ * Compilation: gcc -o found 11_character_found.c
  * Execution: ./found
  *
  * @Ujjwal, 1910991390, 26/01/2021
