@@ -1,6 +1,6 @@
 /* Program to multiply two given matrices
  *
- * Compilation: gcc -o matrices matrices.c
+ * Compilation: gcc -o matrices 5_matrices.c
  * Execution: ./matrices
  *
  * @Ujjwal, 1910991390, 25/07/2021
