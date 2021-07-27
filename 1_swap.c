@@ -1,7 +1,7 @@
 /*
  * Program to swap two numbers without using third variable
  *
- * Compilation: gcc -o swap swap.c
+ * Compilation: gcc -o swap 1_swap.c
  * Execution: ./swap
  *
  * @Ujjwal, 1910991390, 23/07/2021
