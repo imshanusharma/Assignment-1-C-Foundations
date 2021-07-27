@@ -1,6 +1,6 @@
 /* Program to find the rightmost occurence of string 't' is string 's'
  *
- * Compilation : gcc -o rightmost rightmost_string.c
+ * Compilation : gcc -o rightmost 12_rightmost_string.c
  * Execution : ./rightmost
  *
  * @Ujjwal, 1910991390, 27/07/2021
