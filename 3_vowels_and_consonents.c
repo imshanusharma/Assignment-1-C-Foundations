@@ -1,6 +1,6 @@
 /* Program to count vowels and consonents in a given string
  *
- * Compilation: gcc -o vc vowels_and_consonents.c
+ * Compilation: gcc -o vc 3_vowels_and_consonents.c
  * Execution: ./vc
  *
  * @Ujjwal, 1910991390, 24/07/2021
