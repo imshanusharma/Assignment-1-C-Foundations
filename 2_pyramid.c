@@ -1,7 +1,7 @@
 /*
  * Program to print pyramid of # pattern of desired height
  *
- * Compilation: gcc -o pyramid pyramid.c
+ * Compilation: gcc -o pyramid 2_pyramid.c
  * Execution: ./pyramid
  *
  * @Ujjwal, 1910991390, 23/07/2021

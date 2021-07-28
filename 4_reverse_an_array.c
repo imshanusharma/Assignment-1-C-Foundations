@@ -1,6 +1,6 @@
 /* Program to reverse a given array
  *
- * Compilation: gcc -o reverse reverse_an_array.c
+ * Compilation: gcc -o reverse 4_reverse_an_array.c
  * Execution: ./reverse
  *
  * @Ujjwal, 1910991390, 24/07/2021

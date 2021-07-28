@@ -1,6 +1,6 @@
 /* Program to check a given string is palindrome or not
  *
- * Compilation: gcc -o palindrome palindrome_string.c
+ * Compilation: gcc -o palindrome 6_palindrome_string.c
  * Execution: ./palindrome
  *
  * @Ujjwal, 1910991390, 25/07/2021

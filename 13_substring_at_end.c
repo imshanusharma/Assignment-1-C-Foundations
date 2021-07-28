@@ -1,6 +1,6 @@
 /* Program to check whether a string(t) is present at the end of another string(s)
  * 
- * Compilation: gcc -o substring substring_at_end.c
+ * Compilation: gcc -o substring 13_substring_at_end.c
  * Execution: ./substring
  *
  * @Ujjwal, 1910991390, 26/07/2021

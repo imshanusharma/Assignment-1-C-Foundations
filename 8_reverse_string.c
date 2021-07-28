@@ -1,6 +1,6 @@
 /* Program to reverse a given string
  *
- * Compilation: gcc -o reverse reverse_string.c
+ * Compilation: gcc -o reverse 8_reverse_string.c
  * Execution: ./reverse
  *
  * @Ujjwal, 1910991390, 25/07/2021
