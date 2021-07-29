@@ -13,6 +13,19 @@
 #include <string.h>
 #include <math.h>
 
+/*Function to calculate string length*/
+
+int customstrlen(char* str)
+{
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
+
 /*Function to convert hexadecimal to integer
  *
  * parameters
@@ -25,11 +38,11 @@
 
 void hexa_to_int(char* str) {
     
-    int int_value;
+    int int_value = 0;
     int digit;
     int temp;
     
-    for(int i = (strlen(str)-1),p = 0; i >= 2; i--,p++){
+    for(int i = (customstrlen(str)-1),p = 0; i >= 2; i--,p++){
     
         if(str[i] >='0' && str[i] <='9'){
 	
