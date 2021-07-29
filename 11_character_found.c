@@ -18,9 +18,9 @@ void any(char* str1, char* str2) {
     char temp[100];
     int flag;
     bool found = false;
-    for(i = 0; i < strlen(str1); i++) {
+    for(i = 0; str1[i] != '\0'; i++) {
     
-        for(j = 0; j < strlen(str2); j++) {
+        for(j = 0; str2[j] != '\0'; j++) {
 	
 	    if(str1[i] == str2[j]) {
 	    
