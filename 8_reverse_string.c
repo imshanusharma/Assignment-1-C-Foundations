@@ -11,6 +11,19 @@
 #include <stdio.h>
 #include <string.h>
 
+/*Function to calculate String length*/
+
+int customstrlen(char* str)
+{
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
+
 /* Function to reverse a given string
  * 
  * paramaters
@@ -27,7 +40,7 @@ void reverse_string(char* s) {
     char *end;
     char temp;
 
-    length = strlen(s);
+    length = customstrlen(s);
     start = s;
     end = s + length - 1;
 
@@ -52,7 +65,7 @@ int main() {
 
     scanf("%[^\n%*c]",str);
     
-    length = strlen(str);
+    length = customstrlen(str);
 
     reverse_string(str);
     printf("%s", str);

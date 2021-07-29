@@ -44,6 +44,19 @@ void count_vowels_and_consonents(char str[], int length) {
     printf("Vowels : %d Consonents: %d",vowels,consonents);
 
 }
+
+/*Function to calculate length of a string*/
+
+int customstrlen(char* str) {
+
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
 int main() {
 
     char str[100];
@@ -52,7 +65,7 @@ int main() {
     printf("Enter the String:");
     scanf("%[^\n]%*c", str);
 
-    length = strlen(str);
+    length = customstrlen(str);
 
     count_vowels_and_consonents(str,length);
 

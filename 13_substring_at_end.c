@@ -10,6 +10,18 @@
 #include <stdio.h>
 #include <string.h>
 
+/*Function to calculate string length*/
+
+int customstrlen(char* str) {
+
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
 /* Function to check a string(t) occurs at the end of another string(s)
  *
  * parameter
@@ -22,12 +34,12 @@
 
 void last_index(char* s, char* t) {
 
-    int end = strlen(s);
+    int end = customstrlen(s);
     int count = 0;
 
     for(int i = end; i >= 0 ; i--) {
     
-        for(int j = strlen(t); j > 0; j--) {
+        for(int j = customstrlen(t); j > 0; j--) {
 	
 	    if(s[i] == t[j]) {
 	    
@@ -43,7 +55,7 @@ void last_index(char* s, char* t) {
 	}
     
     }
-    if(count == strlen(t))
+    if(count == customstrlen(t))
     {
         printf("1");
     }

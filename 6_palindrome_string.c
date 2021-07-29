@@ -27,7 +27,7 @@ void check_palindrome(char* s) {
     char *end;
     char temp;
 
-    length = strlen(s);
+    length = customstrlen(s);
     start = s;
     end = s + length - 1;
     
@@ -42,12 +42,48 @@ void check_palindrome(char* s) {
     }    
 }
 
-void remove
+/*Function to calculate string length*/
+
+int customstrlen(char* str) {
+
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
+/*Function to compare two strings*/
+
+int customstrcmp(char *s1, char *s2)
+{
+    int value = 0;
+    while( ( *s1 != '\0' && *s2 != '\0' ) && *s1 == *s2 )
+    {
+        s1++;
+        s2++;
+    }
+
+    value = (*s1 ==*s2)?0:(*s1 >*s2)?1:-1;
+    return value;
+}
+
+/*Function to copy a string to another*/
+
+void customstrcpy(char *s, char *t) {
+
+       while (*t) {
+         *s = *t;
+          s++;
+          t++;
+         }
+        *s = *t;
+}
 
 int main() {
 
     char str[100];
-    int length;
     char str_temp[100] = " ";
     int value = 0;
 
@@ -80,10 +116,10 @@ int main() {
     }
     str[j] = '\0';
 
-    strcpy(str_temp,str);
+    customstrcpy(str_temp,str);
     check_palindrome(str);
 
-    value = strcmp(str,str_temp);
+    value = customstrcmp(str,str_temp);
     
     printf("Result: "); 
 

@@ -10,6 +10,19 @@
 #include <stdio.h>
 #include <string.h>
 
+/*Function to calculate string length*/
+
+int customstrlen(char* str) {
+
+    int count=0;
+    for(int i = 0; i < str[i] != '\0'; i++)
+    {
+	count++;
+    }
+    return count;
+}
+
+
 /* Function to find the rightmost occurrence of string 't' in string 's'
  *
  * parameter
@@ -21,24 +34,28 @@
  */
 
 
-void leftmost_occur(char* s, char* t) {
+void rightmost_occur(char* s, char* t) {
 
-    int index;
+    int index = 0;
     int count = 0;
     int j = 0;
-    for(int i = 0; i < strlen(s); i++) {
+    for(int i = 0; s[i] != '\0'; i++) {
      
         if(s[i] == t[j]) {
 	
 	    count++;
 	    j++;
 	}
-	if(count == strlen(t)) {
+	if(count == customstrlen(t)) {
 	   j = 0;
-	   index = i;
+       count=0;
+       index = i;
+	   
 	}
+    
     }
-    printf("index  : %d",index+1);
+    int temp = customstrlen(t)-1;
+    printf("index  : %d",index-temp);
 }
 
 
@@ -52,7 +69,7 @@ int main() {
    printf("Enter second string (t) : ");
    scanf("%s",t);
 
-   leftmost_occur(s,t);
+   rightmost_occur(s,t);
 
    return 0;
 
