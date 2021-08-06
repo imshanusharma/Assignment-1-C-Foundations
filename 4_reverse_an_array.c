@@ -9,28 +9,51 @@
 
 #include <stdio.h>
 
-void reverse(int *num) {
-	
-    printf("%d ",*num);
+/* Function to reverse the given array
+ *
+ * parameters:
+ * arr[] = integer array
+ * size = size of the array
+ *
+ * return
+ * reversed array
+ */
+
+void reverse(int arr[], int size) {
+    
+    int temp;
+    int start = 0;
+    int end = size - 1;
+    while(start < end) {
+    
+        temp = arr[start];
+	arr[start] = arr[end];
+	arr[end] = temp;
+	start++;
+	end--;
+    }
+
+    for(int i = 0; i < size; i++) {
+    
+        printf("%d ",arr[i]);
+    }
 }
 
 int main() {
 
     int size;
-    int arr[size];
 
     printf("Enter the size of Array:");
     scanf("%d",&size);
+
+    int arr[size];
     
     for(int i = 0; i < size; i++) {
     
         scanf("%d",&arr[i]);	    
     }
-    for(int i = size-1; i >= 0; i--) {
-
-        reverse(&arr[i]);
     
-    }
+    reverse(arr,size);
     
     return 0;
 }
