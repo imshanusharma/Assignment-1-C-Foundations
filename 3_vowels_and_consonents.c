@@ -8,8 +8,6 @@
  */
 
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 
 /* Function to count vowels and consonents in a given string
  *
@@ -31,10 +29,6 @@ void count_vowels_and_consonents(char str[], int length) {
     
             vowels++;	    
         }
-	else if(isspace(str[i])) {
-	
-	    continue;
-	}
         else {
 
             consonents++;
